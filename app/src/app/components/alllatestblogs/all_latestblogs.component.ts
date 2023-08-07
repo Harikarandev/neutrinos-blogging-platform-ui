@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-dashboard',
-  templateUrl: './dashboard.template.html',
+  selector: 'bh-all_latestblogs',
+  templateUrl: './all_latestblogs.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class dashboardComponent {
+export class all_latestblogsComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class dashboardComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_FCZ7FpfT783pKTVQ(bh);
+      this.sd_dhtdizvAxaOVSU6g(bh);
     }
   }
 
@@ -50,39 +50,24 @@ export class dashboardComponent {
     //append_listeners
   }
 
-  sd_FCZ7FpfT783pKTVQ(bh) {
+  sd_dhtdizvAxaOVSU6g(bh) {
     try {
-      bh = this.sd_ww3tAyD8A2TLCZm2(bh);
-      //appendnew_next_sd_FCZ7FpfT783pKTVQ
+      bh = this.sd_tsSwHPhvvP7zN9Wt(bh);
+      //appendnew_next_sd_dhtdizvAxaOVSU6g
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_FCZ7FpfT783pKTVQ');
+      return this.errorHandler(bh, e, 'sd_dhtdizvAxaOVSU6g');
     }
   }
 
-  //appendnew_flow_dashboardComponent_start
+  //appendnew_flow_all_latestblogsComponent_start
 
-  sd_ww3tAyD8A2TLCZm2(bh) {
+  sd_tsSwHPhvvP7zN9Wt(bh) {
     try {
-      this.page.login = false;
-
-      bh = this.sd_KaIdJLV5QU27V6gu(bh);
-      //appendnew_next_sd_ww3tAyD8A2TLCZm2
+      //appendnew_next_sd_tsSwHPhvvP7zN9Wt
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_ww3tAyD8A2TLCZm2');
-    }
-  }
-
-  sd_KaIdJLV5QU27V6gu(bh) {
-    try {
-      const page = this.page;
-      page.login = !page.login;
-
-      //appendnew_next_sd_KaIdJLV5QU27V6gu
-      return bh;
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_KaIdJLV5QU27V6gu');
+      return this.errorHandler(bh, e, 'sd_tsSwHPhvvP7zN9Wt');
     }
   }
 
@@ -108,5 +93,5 @@ export class dashboardComponent {
       throw e;
     }
   }
-  //appendnew_flow_dashboardComponent_Catch
+  //appendnew_flow_all_latestblogsComponent_Catch
 }

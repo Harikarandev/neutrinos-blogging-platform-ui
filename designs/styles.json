@@ -22,6 +22,19 @@
         "card-img-box",
         "card-heading",
         "social-interactions",
-        "side-headings"
+        "side-headings",
+        "card-img-box1",
+        "commentbox",
+        "commentarea",
+        "mat-form-field-underline",
+        "cmntbtn",
+        "commentitem",
+        "blogbox",
+        "blog-head",
+        "blog-content",
+        "p-10",
+        "commentlist",
+        "similarblogs",
+        "social-interactions1"
     ]
 }

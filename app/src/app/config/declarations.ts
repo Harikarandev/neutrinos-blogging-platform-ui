@@ -15,6 +15,10 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-blogComponent
+import { blogComponent } from '../components/blog/blog.component';
+//CORE_REFERENCE_IMPORT-all_latestblogsComponent
+import { all_latestblogsComponent } from '../components/alllatestblogs/all_latestblogs.component';
 //CORE_REFERENCE_IMPORT-latest_blogsComponent
 import { latest_blogsComponent } from '../components/latestBlogs/latest_blogs.component';
 //CORE_REFERENCE_IMPORT-dashboardComponent
@@ -51,6 +55,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-blogComponent
+  blogComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-all_latestblogsComponent
+  all_latestblogsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-latest_blogsComponent
   latest_blogsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-dashboardComponent
@@ -81,6 +89,8 @@ export const appProviders = [
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
   { path: 'dashboard', component: dashboardComponent },
+  { path: 'allblogs', component: all_latestblogsComponent },
+  { path: 'blog', component: blogComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

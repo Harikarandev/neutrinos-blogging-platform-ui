@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-dashboard',
-  templateUrl: './dashboard.template.html',
+  selector: 'bh-blog',
+  templateUrl: './blog.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class dashboardComponent {
+export class blogComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class dashboardComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_FCZ7FpfT783pKTVQ(bh);
+      this.sd_ytCFjUmavrcoUV3N(bh);
     }
   }
 
@@ -50,39 +50,71 @@ export class dashboardComponent {
     //append_listeners
   }
 
-  sd_FCZ7FpfT783pKTVQ(bh) {
+  sd_ytCFjUmavrcoUV3N(bh) {
     try {
-      bh = this.sd_ww3tAyD8A2TLCZm2(bh);
-      //appendnew_next_sd_FCZ7FpfT783pKTVQ
+      bh = this.sd_W91vWrMOp20rteWw(bh);
+      //appendnew_next_sd_ytCFjUmavrcoUV3N
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_FCZ7FpfT783pKTVQ');
+      return this.errorHandler(bh, e, 'sd_ytCFjUmavrcoUV3N');
     }
   }
 
-  //appendnew_flow_dashboardComponent_start
-
-  sd_ww3tAyD8A2TLCZm2(bh) {
+  postcmnt(...others) {
     try {
-      this.page.login = false;
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
 
-      bh = this.sd_KaIdJLV5QU27V6gu(bh);
-      //appendnew_next_sd_ww3tAyD8A2TLCZm2
-      return bh;
+      bh = this.sd_yNT03BmTsC69AKRk(bh);
+      //appendnew_next_postcmnt
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_ww3tAyD8A2TLCZm2');
+      return this.errorHandler(bh, e, 'sd_HJ4oTzq6wVtaESyD');
     }
   }
 
-  sd_KaIdJLV5QU27V6gu(bh) {
+  //appendnew_flow_blogComponent_start
+
+  sd_W91vWrMOp20rteWw(bh) {
+    try {
+      this.page.comment = undefined;
+
+      bh = this.sd_tZVVbG9k26rOqtVA(bh);
+      //appendnew_next_sd_W91vWrMOp20rteWw
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_W91vWrMOp20rteWw');
+    }
+  }
+
+  sd_tZVVbG9k26rOqtVA(bh) {
     try {
       const page = this.page;
-      page.login = !page.login;
+      console.log('data', bh.response);
 
-      //appendnew_next_sd_KaIdJLV5QU27V6gu
+      console.log(page.comment);
+      page.postcomment = [];
+
+      //appendnew_next_sd_tZVVbG9k26rOqtVA
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_KaIdJLV5QU27V6gu');
+      return this.errorHandler(bh, e, 'sd_tZVVbG9k26rOqtVA');
+    }
+  }
+
+  sd_yNT03BmTsC69AKRk(bh) {
+    try {
+      const page = this.page;
+      console.log(page.comment);
+      page.postcomment.push(page.comment);
+      page.comment = '';
+
+      //appendnew_next_sd_yNT03BmTsC69AKRk
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_yNT03BmTsC69AKRk');
     }
   }
 
@@ -108,5 +140,5 @@ export class dashboardComponent {
       throw e;
     }
   }
-  //appendnew_flow_dashboardComponent_Catch
+  //appendnew_flow_blogComponent_Catch
 }

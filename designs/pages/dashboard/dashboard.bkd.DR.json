@@ -1993,9 +1993,16 @@
                                         },
                                         {
                                             "_key": "(click)",
-                                            "_value": "",
+                                            "_value": "login()",
                                             "_type": "kv",
-                                            "_attrDef": "p"
+                                            "_attrDef": "p",
+                                            "objValue": {
+                                                "nodeID": "sd_d0SEADTFcehMarwv",
+                                                "functionName": "login",
+                                                "activeTree": "pages",
+                                                "z": "sd_hZUHF4Z19Xm0qjqE",
+                                                "input": []
+                                            }
                                         },
                                         {
                                             "_key": "[disabled]",
